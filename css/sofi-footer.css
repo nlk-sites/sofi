@@ -1,0 +1,112 @@
+/* 
+ *	SoFi Theme CSS - Footer
+ *
+ *	Author: Ninthlink
+ *
+ */
+
+
+/* ==================== FOOTER ================== */
+body.home .footer-contact {
+	display: none;
+}
+.footer-contact {
+	border-top: 1px solid #666;
+	height: 100px;
+}
+.footer-contact h3 {
+	display: block;
+	position: absolute;
+	top: 18px;
+	font: 400 26px/60px "Noto Sans", sans-serif;
+}
+.footer-contact h3#footer-need-assistance {
+	font-style: italic;
+	color: #666;
+	left: 0;
+}
+.footer-contact h3#footer-need-assistance span {
+	font-weight: bold;
+}
+.footer-contact h3#footer-phone {
+	font-weight: bold;
+	color: #25a769;
+	right: 0;
+}
+
+
+.footer-social {
+	height: 254px;
+	background-image: url('/wp-content/themes/sofiwp/images/footer-social-bg.jpg');
+}
+.footer-icon-twitter {
+	height: 254px;
+	float: left;
+	background: url('/wp-content/themes/sofiwp/images/twitter-social-footer.jpg') no-repeat 50% 0;
+}
+.footer-icon-facebook {
+	height: 254px;
+	float: right !important;
+	background: url('/wp-content/themes/sofiwp/images/facebook-social-footer.jpg') no-repeat 50% 0;
+}
+.click-me-twitter {
+	position: relative;
+	width: 155px;
+	height: 32px;
+	top: 177px;
+	left: 41px;
+	cursor: pointer;
+}
+.click-me-facebook {
+	position: relative;
+	width: 155px;
+	height: 32px;
+	top: 177px;
+	left: 41px;
+	cursor: pointer;
+}
+.click-me-a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+
+.were-hiring {
+	height: 50px;
+	background-color: #333;
+}
+
+
+
+
+
+
+.footer-sitemap {
+	height: 179px;
+	background-image: url('/wp-content/themes/sofiwp/images/footer-wave-bg.jpg');
+	border-bottom: 1px solid #999;
+	margin-bottom: 20px;
+}
+.footer-sitemap ul {
+	margin-top: 26px;
+}
+.footer-sitemap a {
+	font: 400 14px/18px "Noto Sans", sans-serif;
+	color: #eee !important;
+	text-decoration: none;
+}
+
+
+
+.footer-terms {
+	margin-bottom: 20px;
+}
+.footer-terms p {
+	color: #666;
+	line-height: 18px;
+}
+.footer-terms .footer-title {
+	margin-top: 16px;
+	font: 700 12px/32px "Noto Sans", sans-serif;
+}
