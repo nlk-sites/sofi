@@ -34,13 +34,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="were-hiring full-width">
+	<div id="were-hiring" class="full-width">
 		<div class="page-width">
-			<div id="we-hiring"><p><span class="caps">We're Hiring:</span> View Current Opportunities</p></div>
+			<div id="were-hiring-text"><p><span class="caps">We're Hiring:</span> View Current Opportunities</p></div>
 			<div id="receive-updates">
 				<label for="email"><span class="caps">Receive Updates</span></label>
 				<input type="text" name="email" class="input email txt req" placeholder="Enter your Email" />
-				<input type="submit" value="Go" class="submit inline-arrow" />
+				<input type="submit" value=" " class="submit inline-arrow" />
 			</div>
 			<div id="footer-social-small-icons">
 			</div>

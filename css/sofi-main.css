@@ -37,6 +37,9 @@
 	-moz-box-shadow: 1px 1px 3px #333;
 	box-shadow: 1px 1px 3px #333;
 }
+.caps {
+	text-transform: uppercase;
+}
 .round-border {
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
@@ -308,6 +311,9 @@ img.desaturate{
 	background: -ms-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(251,251,251,1) 25%,rgba(251,251,251,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom, rgba(232,232,232,1) 0%,rgba(251,251,251,1) 25%,rgba(251,251,251,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#fbfbfb',GradientType=0 ); /* IE6-9 */
+}
+.invest-details {
+	margin-bottom: 80px;
 }
 #real-returns {
 	position: relative;
