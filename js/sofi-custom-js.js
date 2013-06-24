@@ -81,12 +81,19 @@ jQuery(document).ready(function($) {
 
 
 	// Refi Graph tool widget thing
-	$('div.refi-with').click(function(){
+	$('div.refi-with').mouseover(function(){
 		$(this).parent().addClass('refi-with').removeClass('refi-without');
 	});
-	$('div.refi-without').click(function(){
+	$('div.refi-without').mouseover(function(){
 		$(this).parent().addClass('refi-without').removeClass('refi-with');
 	});
+	$('div.refi-rates').click(function(){
+		$(this).parent().addClass('refi-rates').removeClass('refi-loans');
+	});
+	$('div.refi-loans').click(function(){
+		$(this).parent().addClass('refi-loans').removeClass('refi-rates');
+	});
+
 
 	// Recent News widget
 	$('.recent-news-h').wrap('<div class="recent-news-h-line"><div class="recent-news-h-block"></div></div>');

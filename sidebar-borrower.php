@@ -15,10 +15,7 @@
 		<p class="sub-title">Loans Funded as of March, 2013</p>
 		<p>SoFi brings transparency and clarity to student loans. Our application process is intuitive and our terms are clear cut. Borrowers enjoy the convenience and savings from combining all their loans into one fixed-rate loan.</p>
 	</div>
-	<div class="theGraph">
-		<div class="refi-with"></div>
-		<div class="refi-without"></div>
-	</div>
+	<?php show_refi_graph(); ?>
 	<div class="">
 		<h2>85 SCHOOLS</h2>
 		<p class="sub-title">Open for Refinancing</p>

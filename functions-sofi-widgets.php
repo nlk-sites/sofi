@@ -100,3 +100,14 @@ function press_slider_args() {
 		);
 	return $args;
 }
+
+function show_refi_graph($render = true) {
+	if ($render) { ?>
+		<div class="theGraph refi-rates refi-with">
+			<div class="refi-with"></div>
+			<div class="refi-without"></div>
+			<div class="refi-rates"></div>
+			<div class="refi-loans"></div>
+		</div>
+	<?php }
+}

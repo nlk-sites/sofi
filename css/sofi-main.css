@@ -95,8 +95,9 @@ img.desaturate{
 }
 .tp-caption {
 	width: 960px;
+	padding-left: 10px;
 	position: relative !important;
-	margin: 4% auto !important;
+	margin: 3% auto !important;
 }
 .tp-caption h2 {
 	font: 400 50px/62px "Noto Sans", sans-serif;
@@ -117,6 +118,32 @@ img.desaturate{
 	margin-right:20px;
 }
 
+@media screen 
+and (max-width : 1300px)
+and (min-width : 960px) {
+	.tp-caption {
+		width: 960px;
+		padding-left: 10px;
+		position: relative !important;
+		margin: 3% auto !important;
+	}
+	.tp-caption h2 {
+		font: 400 40px/48px "Noto Sans", sans-serif;
+		color: #fff;
+		text-shadow: 2px 2px 3px #000;
+		margin-bottom: 2%;
+	}
+	.tp-caption p {
+		font: 400 23px/24px "Podkova", serif;
+		color: #fff;
+		text-shadow: 1px 1px 1px #000;
+		margin-bottom: 4%;
+	}
+	.tp-caption input[type=button] {
+		margin-right:20px;
+		margin-top: -20px;
+	}
+}
 
 /************************** Home Page Wide Bar Nav ******************************/
 #home-wide-navbar {
@@ -206,28 +233,57 @@ img.desaturate{
 .borrower-details p.sub-title {
 	font: 400 19px/30px 'Podkova', sans-serif;
 }
-.borrower-details .theGraph {
-	background: url('/wp-content/themes/sofiwp/images/refi-with-autopay-graph.jpg') no-repeat;
+
+
+/* Graph Widget */
+
+.theGraph {
+	position: relative;
 }
-.borrower-details .theGraph.refi-without {
-	background: url('/wp-content/themes/sofiwp/images/refi-without-autopay-graph.jpg') no-repeat;
+.theGraph.refi-rates.refi-with {
+	background: url('/wp-content/themes/sofiwp/images/refi-graph/refi-with-autopay-graph.jpg') no-repeat 50% 0;
 }
-.borrower-details .theGraph .refi-with {
+.theGraph.refi-rates.refi-without {
+	background: url('/wp-content/themes/sofiwp/images/refi-graph/refi-without-autopay-graph.jpg') no-repeat 50% 0;
+}
+.theGraph.refi-loans.refi-with {
+	background: url('/wp-content/themes/sofiwp/images/refi-graph/refi-with-autopay-graph.jpg') no-repeat 50% 0;
+}
+.theGraph.refi-loans.refi-without {
+	background: url('/wp-content/themes/sofiwp/images/refi-graph/refi-without-autopay-graph.jpg') no-repeat 50% 0;
+}
+.theGraph .refi-with {
 	position: relative;
 	float: left;
 	top: 0;
-	left: 0;
+	left: 4px;
 	width: 154px;
 	height: 40px;
 	cursor: pointer;
 }
-.borrower-details .theGraph .refi-without {
+.theGraph .refi-without {
 	position: relative;
 	float: right;
 	top: 0;
-	right: 7px;
+	right: 4px;
 	width: 154px;
 	height: 40px;
+	cursor: pointer;
+}
+.theGraph .refi-rates {
+	width: 159px;
+	height: 34px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	cursor: pointer;
+}
+.theGraph .refi-loans {
+	width: 158px;
+	height: 34px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	cursor: pointer;
 }
 
