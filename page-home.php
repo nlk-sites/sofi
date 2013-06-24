@@ -22,44 +22,33 @@ get_header(); ?>
 
 <div class="page page-borrow hfeed">
 	<div class="site">
-		<div class="site-content">
-				<?php 
-				
-				get_sidebar('borrower');
-				echo sofi_calculator();
-
-				?>
-		</div>
+		<?php 
+			get_sidebar('borrower');
+			echo sofi_calculator();
+		?>
 	</div>
 </div>
 
 
 <div class="page page-invest hfeed">
 	<div class="site">
-		<div class="site-content">
-				<?php get_sidebar('invest'); ?>
-		</div>
+		<?php get_sidebar('invest'); ?>
 	</div>
 </div>
 
 <div class="page page-howitworks hfeed">
 	<div class="site">
-		<div class="site-content">
-				<?php get_sidebar('howitworks'); ?>
-		</div>
+		<?php get_sidebar('howitworks'); ?>
 	</div>
 </div>
 
-<div class="page page-social hfeed">
+<div class="page-social hfeed">
 	<div class="site">
-		<div class="site-content">
-				<?php special_recent_posts( press_slider_args() ); ?>
-		</div>
+		<?php special_recent_posts( press_slider_args() ); ?>
 	</div>
 </div>
 
-<div class="page hfeed">
+<div class="hfeed">
 	<div class="site">
 
-	<?php get_sidebar(); ?>
 	<?php get_footer(); ?>

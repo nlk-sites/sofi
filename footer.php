@@ -50,34 +50,34 @@
 		<div class="page-width">
 			<div class="col4 firstcol">
 				<ul>
-					<li><a href="#">Refinance Loan</a></li>
-					<li><a href="#">In-School Loan</a></li>
-					<li><a href="#">Invest</a></li>
-					<li><a href="#">Engage</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Refinance Loan</a></li>
+					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">In-School Loan</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'invest' ) ); ?>">Invest</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'engage' ) ); ?>">Engage</a></li>
 				</ul>
 			</div>
 			<div class="col4">
 				<ul>
-					<li><a href="#">About SoFi</a></li>
-					<li><a href="#">Company Blog</a></li>
-					<li><a href="#">Mike's Blog</a></li>
-					<li><a href="#">FAQ</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'how-it-works' ) ); ?>">About SoFi</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'blog' ) ); ?>">Company Blog</a></li>
+					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Mike's Blog</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">FAQ</a></li>
 				</ul>
 			</div>
 			<div class="col4">
 				<ul>
-					<li><a href="#">Referral Program</a></li>
-					<li><a href="#">Financial Aid Office</a></li>
-					<li><a href="#">Eligible Schools</a></li>
-					<li><a href="#">Events</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'refer-a-friend' ) ); ?>">Referral Program</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'financial-aid-office' ) ); ?>">Financial Aid Office</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'eligible-schools' ) ); ?>">Eligible Schools</a></li>
+					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Events</a></li>
 				</ul>
 			</div>
 			<div class="col4 lastcol">
 				<ul>
-					<li><a href="#">Management Team</a></li>
-					<li><a href="#">Careers</a></li>
-					<li><a href="#">Press</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'management-team' ) ); ?>">Management Team</a></li>
+					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Careers</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'press' ) ); ?>">Press</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'contact-us' ) ); ?>">Contact Us</a></li>
 				</ul>
 			</div>
 		</div>

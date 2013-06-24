@@ -14,18 +14,26 @@
 
 get_header(); ?>
 
-<div id="page-top" class="page hfeed">
+<?php while ( have_posts() ) : the_post(); ?>
+
+<div id="page-top" class="page hfeed default-page">
+	<div class="site">
+		<h1 class="title"><?php echo get_the_title(); ?></h1>
+	</div>
+</div>
+
+<div class="page" class="page hfeed">
 	<div class="site">
 		<div class="site-content">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'page' ); ?>
-				<?php comments_template( '', true ); ?>
-			<?php endwhile; // end of the loop. ?>
-
+				<?php the_content(); ?>
+			
 		</div>
 	</div>
 </div>
+
+<?php endwhile; // end of the loop. ?>
+
 <div class="page hfeed">
 	<div class="site">
 
