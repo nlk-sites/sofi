@@ -12,6 +12,13 @@
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
 	color: #444;
 }
+b {
+	font-weight: 700;
+}
+strong {
+	font-weight: 700;
+	margin-right: 10px;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	color: #666;
@@ -64,15 +71,15 @@ table {
 	width: 100%;
 	border: 1px solid #ccc;
 }
-tr {
-	border-bottom: 1px solid #ccc;
-}
 th, td {
 	border-right: 1px solid #ccc;
 	padding: 8px 20px;
 }
 th {
+	font: 700 13px/18px "Noto sans", Arial, sans-serif;
+	color: #555;
 	background-color: #eee;
+	border-bottom: 1px solid #ccc;
 }
 
 
