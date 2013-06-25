@@ -16,30 +16,45 @@ get_header();
 
 ?>
 
-<div id="page-top" class="page hfeed">
-	<div class="site">
-	<?php /* header image, refi/find school widget */ ?>
-		<h1 class="title">Student Loan<br />Refinancing</h1>
-		<h4 class="title">Trusted Alumni Community. Better Rates.<br />SoFi Student &amp; Graduate Loans.</h4>
-		<?php /* the school widget here */ ?>
-	</div>
-</div>
+<?php while ( have_posts() ) : the_post(); ?>
+
+	<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+		<div id="page-top" class="page hfeed">
+		<?php the_post_thumbnail('full'); ?>
+		
+			<div class="site">
+				<h1 class="title wimg"><?php echo get_the_title(); ?></h1>
+				<h4 class="title wimg"><?php echo get_post_meta( get_the_ID(), 'sub-title', true ); ?></h4>
+				
+
+				<?php if ( get_post_meta( get_the_ID(), 'sub-title', true ) == true ) {
+					sofi_school_select();
+				} ?>
+
+			</div>
+		</div>
+	<?php } else { ?>
+		<div id="page-top" class="page hfeed default-page">
+			<div class="site">
+				<h1 class="title"><?php echo get_the_title(); ?></h1>
+			</div>
+		</div>
+	<?php } ?>
 
 <div class="page hfeed">
 	<div class="site">
 		<div class="site-content">
-			<div class="left-col">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php the_content(); ?>
-				<?php endwhile; // end of the loop. ?>
-			</div>
-			<div class="right-col">
-				<?php show_refi_graph(); ?>
-			</div>
+
+				<?php the_content(); ?>
+				
 		</div>
+			
+			<?php get_sidebar(); ?>
+
 	</div>
 </div>
 
+<?php endwhile; // end of the loop. ?>
 
 <div class="page hfeed">
 	<div class="site">
@@ -68,5 +83,5 @@ get_header();
 <div class="page hfeed">
 	<div class="site">
 
-	<?php get_sidebar(); ?>
+	
 	<?php get_footer(); ?>

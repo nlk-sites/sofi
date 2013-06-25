@@ -16,11 +16,23 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-<div id="page-top" class="page hfeed default-page">
-	<div class="site">
-		<h1 class="title"><?php echo get_the_title(); ?></h1>
-	</div>
-</div>
+	<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
+		<div id="page-top" class="page hfeed">
+		<?php the_post_thumbnail('full'); ?>
+		
+			<div class="site">
+				<h1 class="title wimg"><?php echo get_the_title(); ?></h1>
+				<h4 class="title wimg"><?php echo get_post_meta( get_the_ID(), 'sub-title', true ); ?></h4>
+				<?php /* the school widget here */ ?>
+			</div>
+		</div>
+	<?php } else { ?>
+		<div id="page-top" class="page hfeed default-page">
+			<div class="site">
+				<h1 class="title"><?php echo get_the_title(); ?></h1>
+			</div>
+		</div>
+	<?php } ?>
 
 <div class="page" class="page hfeed">
 	<div class="site">
@@ -29,6 +41,9 @@ get_header(); ?>
 				<?php the_content(); ?>
 			
 		</div>
+
+		<?php get_sidebar(); ?>
+
 	</div>
 </div>
 
@@ -37,5 +52,4 @@ get_header(); ?>
 <div class="page hfeed">
 	<div class="site">
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

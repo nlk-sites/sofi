@@ -111,3 +111,20 @@ function show_refi_graph($render = true) {
 		</div>
 	<?php }
 }
+
+
+function sofi_school_select($render = true) {
+	if ($render) { ?>
+		<div class="school-selector full-width">
+			<div class="full-width">
+				
+				<div class="left-col">
+				</div>
+
+				<div class="right-col">
+				</div>
+			
+			</div>
+		</div>
+	<?php }
+}
