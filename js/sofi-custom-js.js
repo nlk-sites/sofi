@@ -97,8 +97,8 @@ jQuery(document).ready(function($) {
 
 	// Recent News widget
 	$('.recent-news-h').wrap('<div class="recent-news-h-line"><div class="recent-news-h-block"></div></div>');
-	$('.srp-widget-container').addClass('first-third').wrap('<div class="srp-widget-wrapper" />');
-	$('.srp-widget-wrapper').before('<div id="srp-left" class="srp-widget-nav arrow-left"></div>').after('<div id="srp-right" class="srp-widget-nav arrow-right"></div>');
+	$('.page-newsfeed .srp-widget-container').addClass('first-third').wrap('<div class="srp-widget-wrapper" />');
+	$('.page-newsfeed .srp-widget-wrapper').before('<div id="srp-left" class="srp-widget-nav arrow-left"></div>').after('<div id="srp-right" class="srp-widget-nav arrow-right"></div>');
 	$( "#srp-right" ).click(function() {
 		var len = $('.srp-widget-singlepost').length - 1;
 		var n = Math.floor( len / 3 );
