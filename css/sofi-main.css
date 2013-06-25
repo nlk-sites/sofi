@@ -32,6 +32,21 @@ h1.title.wimg, h4.title.wimg {
 	letter-spacing: -1px;
 	margin-bottom: 24px;
 }
+
+
+p {
+	font: 400 13px/18px "Noto sans", Arial, sans-serif;
+	margin: 6px 0 12px;
+}
+.site-content li {
+	font: 400 13px/18px "Noto sans", Arial, sans-serif;
+	margin: 6px 0 12px 20px;
+}
+
+
+
+
+
 .site-content ul {
 	margin-left: 20px;
 }
