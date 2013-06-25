@@ -85,9 +85,11 @@ th {
 	border-bottom: 1px solid #ccc;
 }
 
-
+#primary,
 .page {
-	width: 100%;
+	width: 100#;
+}
+.page {
 	overflow: auto;
 	padding-bottom: 40px;
 }
