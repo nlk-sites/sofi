@@ -36,7 +36,7 @@
 	</div>
 	<div id="were-hiring" class="full-width">
 		<div class="page-width">
-			<div id="were-hiring-text"><p><span class="caps">We're Hiring:</span> View Current Opportunities</p></div>
+			<div id="were-hiring-text"><a href="https://sofi.resumetracker.com/public" target="_blank"><p><span class="caps">We're Hiring:</span> View Current Opportunities</p></a></div>
 			<div id="receive-updates">
 				<label for="email"><span class="caps">Receive Updates</span></label>
 				<input type="text" name="email" class="input email txt req" placeholder="Enter your Email" />
@@ -51,16 +51,16 @@
 			<div class="col4 firstcol">
 				<ul>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Refinance Loan</a></li>
-					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">In-School Loan</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'schools' ) ); ?>">In-School Loan</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'invest' ) ); ?>">Invest</a></li>
-					<li><a href="<?php echo get_permalink( get_page_by_path( 'engage' ) ); ?>">Engage</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'community' ) ); ?>">Community</a></li>
 				</ul>
 			</div>
 			<div class="col4">
 				<ul>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'how-it-works' ) ); ?>">About SoFi</a></li>
-					<li><a href="<?php echo get_permalink( get_page_by_path( 'blog' ) ); ?>">Company Blog</a></li>
-					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Mike's Blog</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'category/blog' ) ); ?>">Company Blog</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'category/blog/mike' ) ); ?>">Mike's Blog</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'faq' ) ); ?>">FAQ</a></li>
 				</ul>
 			</div>
@@ -69,13 +69,13 @@
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'refer-a-friend' ) ); ?>">Referral Program</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'financial-aid-office' ) ); ?>">Financial Aid Office</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'eligible-schools' ) ); ?>">Eligible Schools</a></li>
-					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Events</a></li>
+					<li><a href="<?php echo get_permalink( get_page_by_path( 'category/blog/mike' ) ); ?>">Events</a></li>
 				</ul>
 			</div>
 			<div class="col4 lastcol">
 				<ul>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'management-team' ) ); ?>">Management Team</a></li>
-					<li><a href="<?php //echo get_permalink( get_page_by_path( 'loan-refinance' ) ); ?>">Careers</a></li>
+					<li><a href="https://sofi.resumetracker.com/public">Careers</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'press' ) ); ?>">Press</a></li>
 					<li><a href="<?php echo get_permalink( get_page_by_path( 'contact-us' ) ); ?>">Contact Us</a></li>
 				</ul>

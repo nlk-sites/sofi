@@ -142,6 +142,19 @@ jQuery(document).ready(function($) {
     /* fixes... */
     $('th').attr('valign', 'bottom');
 
+    // make input buttons links
+    $('input[type=button]').click(function() {
+    	if ( $(this).attr('url') ) {
+    		var url = $(this).attr('url');
+    		window.location = url;
+    	}
+    });
+
+    // video fix
+    var video = document.getElementById('video');
+		video.addEventListener('click',function(){
+		video.play();
+	},false);
 
 
 

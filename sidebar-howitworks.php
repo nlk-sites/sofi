@@ -17,7 +17,7 @@
 		<span>
 			<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise -->
 			<!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
-			<video id="0" controls width="960" height="540">
+			<video id="0" controls width="960" height="540" poster="/wp-content/themes/sofiwp/images/video/video-screenshot.jpg" onclick="this.play();">
 				<source src="/wp-content/themes/sofiwp/images/video/SoFiNoBanks.mp4" type='video/mp4'>
 				<source src="/wp-content/themes/sofiwp/images/video/SoFiNoBanks.ogv" type='video/ogg; codecs="theora, vorbis"'/>
 				<source src="/wp-content/themes/sofiwp/images/video/SoFiNoBanks.webm" type='video/webm' >
@@ -30,7 +30,7 @@
 				</object>
 			</video>
 		</span>
-		<input type="button" id="learn-more-community" value="Learn More about the SoFi Community" />
+		<input type="button" id="learn-more-community" class="button" url="<?php echo get_permalink( get_page_by_path( 'community' ) ); ?>" value="Learn More about the SoFi Community" />
 	</div>
 
 </div>

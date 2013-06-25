@@ -82,7 +82,11 @@ body.home .footer-contact {
 	display: inline-block;
 	float: left;
 }
+#were-hiring a {
+	text-decoration: none;
+}
 #were-hiring #were-hiring-text p {
+	color: #fff !important;
 	padding-top: 9px;
 }
 #were-hiring #were-hiring-text p span {
