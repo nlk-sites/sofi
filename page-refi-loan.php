@@ -19,10 +19,10 @@ get_header();
 <?php while ( have_posts() ) : the_post(); ?>
 
 	<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it. ?>
-		<div id="page-top" class="page hfeed">
+		<div id="page-top" class="page wimg hfeed">
 		<?php the_post_thumbnail('full'); ?>
 		
-			<div class="header">
+			<div class="header wimg">
 				<h1 class="title wimg"><?php echo get_the_title(); ?></h1>
 				<h4 class="title wimg"><?php echo get_post_meta( get_the_ID(), 'sub-title', true ); ?></h4>
 				

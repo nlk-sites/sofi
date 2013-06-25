@@ -46,12 +46,19 @@ h1.title.wimg, h4.title.wimg {
 #page-top {
 	margin-top: 90px;
 	margin-bottom: 24px;
+	overflow: hidden;
+}
+#page-top.wimg {
+	height: 435px;
 }
 #page-top .header {
-	margin-top: -460px;
-	overflow: visible;
+	margin-left: auto;
+	margin-right: auto;
 	clear: both;
 	width: 960px;
+}
+#page-top .header.wimg {
+	margin-top: -500px;
 }
 
 #page-top .site-content {
@@ -221,6 +228,7 @@ and (min-width : 960px) {
 /************************** Home Page Wide Bar Nav ******************************/
 .home #page-top {
 	margin-bottom: 40px;
+	margin-top: 0;
 }
 #home-wide-navbar {
 	/*width: 960px;*/
@@ -639,20 +647,6 @@ div.srp-content-box {
 	color: inherit;
 	text-decoration: none;
 }
-
-
-/* Page Refi Loan */
-.page-template-page-refi-loan-php #page-top {
-	margin-top: 90px;
-	height: 510px;
-	overflow-y: hidden;
-}
-.page-template-page-refi-loan-php #page-top .site {
-	position: relative;
-	top: -500px;
-	padding-left: 20px;
-}
-
 
 /************************* School Widget ******************************/
 .school-selector {
