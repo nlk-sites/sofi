@@ -19,6 +19,7 @@ strong {
 
 h1, h2, h3, h4, h5, h6 {
 	letter-spacing: -1px;
+	margin-top: 1rem;
 }
 h1.title {
 	font: 400 62px/68px "Noto Sans", sans-serif;
@@ -42,7 +43,6 @@ h1.title.wimg, h4.title.wimg {
 .site-content h3 {
 	font: 700 32px/44px "Noto sans", Arial, sans-serif;
 	color: #666;
-	margin-bottom: 24px;
 }
 .site-content h4 {
 	font: 400 22px/22px "Noto sans", Arial, sans-serif;
@@ -56,7 +56,6 @@ h1.title.wimg, h4.title.wimg {
 	font: 700 23px/28px "Podkova", serif;
 	color: #666;
 	letter-spacing: 0;
-	margin-top: 20px;
 }
 
 p {
