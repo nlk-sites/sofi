@@ -67,7 +67,7 @@ li {
 	line-height: 24px;
 }
 .site-content {
-	margin-top: 24px;
+	/* margin-top: 24px; */
 }
 .site-content li {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
