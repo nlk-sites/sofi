@@ -20,7 +20,7 @@ get_header(); ?>
 		<div id="page-top" class="page hfeed">
 		<?php the_post_thumbnail('full'); ?>
 		
-			<div class="site">
+			<div class="header">
 				<h1 class="title wimg"><?php echo get_the_title(); ?></h1>
 				<h4 class="title wimg"><?php echo get_post_meta( get_the_ID(), 'sub-title', true ); ?></h4>
 				<?php /* the school widget here */ ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 		</div>
 	<?php } else { ?>
 		<div id="page-top" class="page hfeed default-page">
-			<div class="site">
+			<div class="header">
 				<h1 class="title"><?php echo get_the_title(); ?></h1>
 			</div>
 		</div>

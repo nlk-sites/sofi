@@ -47,6 +47,13 @@ h1.title.wimg, h4.title.wimg {
 	margin-top: 90px;
 	margin-bottom: 24px;
 }
+#page-top .header {
+	margin-top: -460px;
+	overflow: visible;
+	clear: both;
+	width: 960px;
+}
+
 #page-top .site-content {
 	margin-top: 120px;
 }
