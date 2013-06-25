@@ -44,6 +44,7 @@ h1.title.wimg, h4.title.wimg {
 	padding-bottom: 40px;
 }
 #page-top {
+	margin-top: 90px;
 	margin-bottom: 24px;
 }
 #page-top .site-content {
@@ -560,7 +561,7 @@ div.srp-widget-singlepost {
 	clear: none !important;
 	width: 306px;
 	float: left;
-	overflow: none;
+	overflow: hidden;
 }
 
 div.srp-thumbnail-box {
