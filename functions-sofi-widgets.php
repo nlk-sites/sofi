@@ -139,50 +139,69 @@ function sofi_homepage_nav($render = true) {
 
 }
 
-function press_slider_args() {
-	$args = array(
-		'widget_title' => 'Recent News',
-		'display_thumbnail' => 'yes',
-		'widget_title_hide' => 'no',
-		// Enter a space separated list of additional css classes for this widget title header.
-		'widget_title_header_classes' => 'recent-news-h',
-		'thumbnail_width' => 200,
-		'thumbnail_height' => 80,
-		'thumbnail_link' => 'no',
-		'thumbnail_rotation' => 'no',
-		'post_type' => 'post',
-		'post_status' => 'publish',
-		'post_limit' => 9,
-		'post_content_type' => 'excerpt',
-		// Set displayed post content length (default: 100)
-		'post_content_length' => 100,
-		// Set displayed post content length mode (default: 'chars')
-		'post_content_length_mode' => 'chars',
-		// Set displayed post title length (default 100)
-		'post_title_length' => 100,
-		// Set displayed post title length mode (default: 'chars')
-		'post_title_length_mode' => 'chars',
-		// Set post order (default: 'DESC')
-		'post_order' => 'DESC',
-		// Hide current post from visualization when in single post view? (default: 'yes')
-		'post_current_hide' => 'yes',
-		// Set layout content mode (default: 'titleexcerpt')
-		'post_content_mode' => 'titleexcerpt',
-		// Display post date? (default: 'yes')
-		'post_date' => 'no',
-		// Set allowed tags to display in the excerpt visualization.
-		'allowed_tags' => '',
-		// Set string break text (default: [...])
-		'string_break' => 'READ MORE',
-		// Link (image)string break to post?
-		'string_break_link'  => 'yes',
-		// Filter posts by including categories IDs. (default: none)
-		'category_include' => '3',
-		// When filtering by caqtegories, switch the widget title to a linked category title (default: 'no')
-		'category_title' => 'no',
-		// Add the 'no-follow' attribute to all widget links.
-		'nofollow_links' => 'no'
-		);
+function press_slider_args($id = NULL) {
+
+	// for usage/array details: http://wordpress.org/plugins/special-recent-posts/installation/
+
+	if ( $id == 1 ) {
+		$args = array(
+			'widget_title' => 'Recent News',
+			'display_thumbnail' => 'yes',
+			'widget_title_hide' => 'no',
+			'widget_title_header_classes' => 'recent-news-h',
+			'thumbnail_width' => 200,
+			'thumbnail_height' => 80,
+			'thumbnail_link' => 'no',
+			'thumbnail_rotation' => 'no',
+			'post_type' => 'post',
+			'post_status' => 'publish',
+			'post_limit' => 9,
+			'post_content_type' => 'excerpt',
+			'post_content_length' => 100,
+			'post_content_length_mode' => 'chars',
+			'post_title_length' => 100,
+			'post_title_length_mode' => 'chars',
+			'post_order' => 'DESC',
+			'post_current_hide' => 'yes',
+			'post_content_mode' => 'titleexcerpt',
+			'post_date' => 'no',
+			'allowed_tags' => '',
+			'string_break' => 'READ MORE',
+			'string_break_link'  => 'yes',
+			'category_include' => '3',
+			'category_title' => 'no',
+			'nofollow_links' => 'no'
+			);
+	}
+	if ( $id == 2 ) {
+		$args = array(
+			'widget_title' => 'Testimonials',
+			'display_thumbnail' => 'yes',
+			'widget_title_hide' => 'yes',
+			'widget_title_header_classes' => 'testimonial-header',
+			'thumbnail_width' => 130,
+			'thumbnail_height' => 130,
+			'thumbnail_link' => 'no',
+			'thumbnail_rotation' => 'no',
+			'post_type' => 'post',
+			'post_status' => 'publish',
+			'post_limit' => 4,
+			'post_content_type' => 'content',
+			'post_content_length' => 100,
+			'post_content_length_mode' => 'fullcontent',
+			'post_title_length' => 100,
+			'post_title_length_mode' => 'chars',
+			'post_order' => 'DESC',
+			'post_current_hide' => 'yes',
+			'post_date' => 'no',
+			'allowed_tags' => '',
+			'string_break' => 'READ MORE',
+			'string_break_link'  => 'yes',
+			'category_include' => '11',
+			'category_title' => 'no',
+			'nofollow_links' => 'no'
+			);
+	}
 	return $args;
 }
 

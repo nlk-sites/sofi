@@ -42,9 +42,16 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="page-social hfeed">
+<div class="page-testimonials hfeed">
 	<div class="site">
-		<?php special_recent_posts( press_slider_args() ); ?>
+		<?php special_recent_posts( press_slider_args(2) ); ?>
+	</div>
+</div>
+
+
+<div class="page-newsfeed hfeed">
+	<div class="site">
+		<?php special_recent_posts( press_slider_args(1) ); ?>
 	</div>
 </div>
 
