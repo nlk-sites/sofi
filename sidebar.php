@@ -10,7 +10,7 @@
  */
 ?>
 
-	<?php if ( is_active_sidebar( 'sidebar-1' ) && get_post_meta( get_the_ID(), 'show-widget_rates-graph', true ) == true ) : ?>
+	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</div><!-- #secondary -->
