@@ -7,27 +7,33 @@
 
 
 /* headers */
- h1.title {
- 	font: 400 62px/68px "Noto Sans", sans-serif;
- 	font-style: italic;
- 	color: #fff;
- 	text-shadow: 2px 2px 3px #000;
- 	margin: 12px 0 18px;
- }
- h4.title {
- 	font: 400 22px/28px "Podkova", serif;
- 	color: #fff;
- 	text-shadow: 2px 2px 3px #000;
- }
+
+* {
+	font: 400 13px/18px "Noto sans", Arial, sans-serif;
+}
+
+
+h1.title {
+	font: 400 62px/68px "Noto Sans", sans-serif;
+	font-style: italic;
+	color: #fff;
+	text-shadow: 2px 2px 3px #000;
+	margin: 12px 0 18px;
+}
+h4.title {
+	font: 400 22px/28px "Podkova", serif;
+	color: #fff;
+	text-shadow: 2px 2px 3px #000;
+}
 h1.title.wimg, h4.title.wimg {
 	max-width: 600px;
 }
- .site-content h2 {
-	font: 700 38px/48px "Podkova";
+.site-content h2 {
+	font: 700 38px/48px "Podkova", serif;
 	color: #666;
 }
-.site-content h4 {
-	font: 400 22px/22px "Noto sans";
+.site-content h3, .site-content h4 {
+	font: 400 22px/22px "Noto sans", Arial, sans-serif;
 	color: #666;
 	letter-spacing: -1px;
 	margin-bottom: 24px;
@@ -37,6 +43,9 @@ h1.title.wimg, h4.title.wimg {
 p {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
 	margin: 6px 0 12px;
+}
+li {
+	line-height: 24px;
 }
 .site-content li {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
