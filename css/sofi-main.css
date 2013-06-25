@@ -48,7 +48,16 @@ h1.title.wimg, h4.title.wimg {
 	font: 400 22px/22px "Noto sans", Arial, sans-serif;
 	color: #666;
 }
-
+.widget-area h2 {
+	font: 400 30px/34px "Podkova", serif;
+	color: #666;
+}
+.widget-area h3 {
+	font: 700 23px/28px "Podkova", serif;
+	color: #666;
+	letter-spacing: 0;
+	margin-top: 20px;
+}
 
 p {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
@@ -125,7 +134,7 @@ th {
 	clear: both;
 	width: 960px;
 }
-#primary .header {
+#primary header {
 	width: 960px;
 	margin: auto;
 }
@@ -226,6 +235,7 @@ img.desaturate{
 .widget-title {
 	display: none;
 }
+
 /************************** Home Page Rev Slider ******************************/
 .rev_slider > ul li {
 	width: 100% !important;
