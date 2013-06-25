@@ -137,6 +137,10 @@ jQuery(document).ready(function($) {
     });
 
 
+    /* fixes... */
+    $('th').attr('valign', 'bottom');
+
+
 
 
 });

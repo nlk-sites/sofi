@@ -10,6 +10,7 @@
 
 * {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
+	color: #444;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,7 +36,7 @@ h1.title.wimg, h4.title.wimg {
 	font: 700 38px/48px "Podkova", serif;
 }
 .site-content h3 {
-	font: 700 38px/48px "Noto sans", Arial, sans-serif;
+	font: 700 32px/44px "Noto sans", Arial, sans-serif;
 	margin-bottom: 24px;
 }
 .site-content h4 {
@@ -54,15 +55,25 @@ li {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
 	margin: 6px 0 12px 20px;
 }
-
-
-
-
-
 .site-content ul {
 	margin-left: 20px;
 }
 
+
+table {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+tr {
+	border-bottom: 1px solid #ccc;
+}
+th, td {
+	border-right: 1px solid #ccc;
+	padding: 8px 20px;
+}
+th {
+	background-color: #eee;
+}
 
 
 .page {
