@@ -125,6 +125,10 @@ th {
 	clear: both;
 	width: 960px;
 }
+#primary .header {
+	width: 960px;
+	margin: auto;
+}
 .clr {
 	clear: both;
 }

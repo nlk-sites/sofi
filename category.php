@@ -13,6 +13,12 @@
 
 get_header(); ?>
 
+		<div id="page-top" class="page hfeed default-page">
+			<div class="header">
+				<h1 class="title"><?php echo single_cat_title(); ?></h1>
+			</div>
+		</div>
+
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
