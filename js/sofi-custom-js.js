@@ -142,8 +142,14 @@ jQuery(document).ready(function($) {
     /* fixes... */
     $('th').attr('valign', 'bottom');
 
-    // make input buttons links
+    // make input[type=button] and div.clickable into links
     $('input[type=button]').click(function() {
+    	if ( $(this).attr('url') ) {
+    		var url = $(this).attr('url');
+    		window.location = url;
+    	}
+    });
+    $('div.clickable').click(function() {
     	if ( $(this).attr('url') ) {
     		var url = $(this).attr('url');
     		window.location = url;
@@ -151,12 +157,9 @@ jQuery(document).ready(function($) {
     });
 
     // video fix
-    var video = document.getElementById('video');
-		video.addEventListener('click',function(){
-		video.play();
-	},false);
-
-
+    $('video').click(function() {
+    	$(this)[0].play();
+    });
 
 });
 
