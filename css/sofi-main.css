@@ -8,10 +8,7 @@
 
 /* headers */
 
-* {
-	font: 400 13px/18px "Noto sans", Arial, sans-serif;
-	color: #444;
-}
+
 b {
 	font-weight: 700;
 }
@@ -21,7 +18,6 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #666;
 	letter-spacing: -1px;
 }
 h1.title {
@@ -41,22 +37,29 @@ h1.title.wimg, h4.title.wimg {
 }
 .site-content h2 {
 	font: 700 38px/48px "Podkova", serif;
+	color: #666;
 }
 .site-content h3 {
 	font: 700 32px/44px "Noto sans", Arial, sans-serif;
+	color: #666;
 	margin-bottom: 24px;
 }
 .site-content h4 {
 	font: 400 22px/22px "Noto sans", Arial, sans-serif;
+	color: #666;
 }
 
 
 p {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
+	color: #555;
 	margin: 6px 0 12px;
 }
 li {
 	line-height: 24px;
+}
+.site-content {
+	margin-top: 24px;
 }
 .site-content li {
 	font: 400 13px/18px "Noto sans", Arial, sans-serif;
@@ -214,6 +217,9 @@ img.desaturate{
 	-webkit-filter: grayscale(1);
 }
 
+.widget-title {
+	display: none;
+}
 /************************** Home Page Rev Slider ******************************/
 .rev_slider > ul li {
 	width: 100% !important;
