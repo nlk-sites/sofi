@@ -624,10 +624,10 @@ section[role="banner"] {
 	margin-bottom: 3.428571429rem;
 	word-wrap: break-word;
 }
-.widget-area .widget h3 {
+/* .widget-area .widget h3 {
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
-}
+} */
 .widget-area .widget p,
 .widget-area .widget li,
 .widget-area .widget .textwidget {

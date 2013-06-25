@@ -20,6 +20,7 @@ strong {
 h1, h2, h3, h4, h5, h6 {
 	letter-spacing: -1px;
 	margin-top: 1rem;
+	margin-bottom: .55rem;
 }
 h1.title {
 	font: 400 62px/68px "Noto Sans", sans-serif;
@@ -91,6 +92,13 @@ th {
 	color: #555;
 	background-color: #eee;
 	border-bottom: 1px solid #ccc;
+}
+table.zebra {
+	border: none;
+}
+table.zebra th, table.zebra td {
+	border: none;
+	padding: 6px 12px;
 }
 
 #primary,

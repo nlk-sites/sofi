@@ -17,7 +17,7 @@ body.home .footer-contact {
 .footer-contact h3 {
 	display: block;
 	position: absolute;
-	top: 18px;
+	top: 8px;
 	font: 400 26px/60px "Noto Sans", sans-serif;
 }
 .footer-contact h3#footer-need-assistance {
