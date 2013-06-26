@@ -886,19 +886,30 @@ div#invest-home-button {
 	width: 240px;
 }
 .testimonial-img {
-	width: 130px;
-	height: 130px;
+	width: 240px;
+	height: 220px;
 	margin: auto;
+	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block-empty.png') no-repeat 50%;
+}
+.testimonial-img img {
+	width: 120px;
+	height: 120px;
+	position: relative;
+	left: 65px;
+	top: 34px;
+	z-index: -9;
 }
 .testimonial-info {
 	text-align: center;
+	position: relative;
+	top: -40px;
 }
 .testimonial-info p {
-	margin-bottom: 2px;
+	margin: 3px;
 }
 .test-type {
 	font: 700 13px/13px "Noto sans", Arial, sans-serif;
-	color: #39acdb;
+	color: #178dc0;
 	text-transform: uppercase;
 }
 .test-name {
@@ -908,4 +919,14 @@ div#invest-home-button {
 }
 .test-name:before {
 	content: '- ';
+}
+.testimonials {
+clear: both;
+}
+.testimonials p {
+font: 400 30px/34px "Noto sans", Arial, sans-serif;
+}
+.testimonials p:before,
+.testimonials p:after {
+	content: '"';
 }
