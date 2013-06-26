@@ -224,10 +224,10 @@ function sofi_school_select($render = true)
 	if ($render) { ?>
 		<div class="school-selector full-width">
 				
-				<div class="left-col">
+				<div class="bg-grey w620">
 				</div>
 
-				<div class="right-col">
+				<div class="bg-blue w340">
 				</div>
 			
 				<div class="school-selector-contents do-not-show">

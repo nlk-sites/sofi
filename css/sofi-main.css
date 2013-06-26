@@ -10,6 +10,9 @@ html {
 	min-width: 960px;
 }
 
+/************
+*	FONTS 	*
+************/
 b {
 	font-weight: 700;
 }
@@ -19,37 +22,37 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: "Noto sans", Arial, sans-serif;
+	color: #666;
 	letter-spacing: -1px;
 	margin-top: 1rem;
 	margin-bottom: .55rem;
 }
+.podkova {
+	font-family: "Podkova", serif;
+}
 h1 {
-
+	font-size: 62px;
+	font-size: 3.875em;
+	line-height: 68px;
+	line-height: 4.25em;
 }
 h2 {
-	font: 700 38px/48px "Podkova", serif;
-	color: #666;
+	font-size: 38px;
+	font-size: 2.375em;
+	line-height: 48px;
+	line-height: 3em;
+	font-weight: 700;
 }
 h3 {
 	font: 700 32px/44px "Noto sans", Arial, sans-serif;
-	color: #666;
-}
-h3.podkova {
-	font: 400 32px/44px "Podkova", serif;
-	color: #666;
 }
 h4 {
 	font: 400 22px/22px "Noto sans", Arial, sans-serif;
-	color: #666;
-}
-h4.podkova {
-	font: 400 22px/22px "Podkova", serif;
-	color: #666;
 }
 
 
 h1.title {
-	font: 400 62px/68px "Noto Sans", sans-serif;
 	color: #fff !important;
 	font-style: italic;
 	text-shadow: 2px 2px 3px #000;
@@ -60,7 +63,7 @@ h4.title {
 	color: #fff !important;
 	text-shadow: 2px 2px 3px #000;
 }
-h1.title.wimg, h4.title.wimg {
+.title.wimg {
 	max-width: 600px;
 }
 
@@ -79,7 +82,7 @@ p {
 	color: #555;
 	margin: 6px 0 12px;
 }
-.white-text {
+.white-txt {
 	color: #fff;
 }
 li {
