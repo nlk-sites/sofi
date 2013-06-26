@@ -891,7 +891,7 @@ div#invest-home-button {
 	margin: auto;
 	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block-empty.png') no-repeat 50%;
 }
-.testimonial-img:hover {
+.testimonial-img.hovered {
 	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block.png') no-repeat 50%;
 }
 .testimonial-img img {

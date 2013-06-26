@@ -137,9 +137,13 @@ jQuery(document).ready(function($) {
     });
 
     /* Testimonials Widget */
-    $('.testimonial-person').mouseover(function(){
+    $('div.testimonial-person').mouseover(function(){
     	var rel = $(this).attr('rel');
+    	$('div.testimonial-img').removeClass('hovered');
+    	$('div.testimonial-img img').addClass('desaturate');
     	$('div.testimonial').addClass('do-not-show');
+    	$('div#testimonial-person-' + rel + ' .testimonial-img').addClass('hovered');
+    	$('div#testimonial-person-' + rel + ' .testimonial-img img').removeClass('desaturate');
     	$('div#testimonial-' + rel).removeClass('do-not-show');
     });
 
