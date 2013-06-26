@@ -12,8 +12,8 @@
 <div class="howitworks-details">
 	
 	<div>
-		<h2>A Community That Cares About You</h2>
-		<h4>Access to an alumni community vested in your success</h4>
+		<h2 class="white-txt">A Community That Cares About You</h2>
+		<h4 class="white-txt">Access to an alumni community vested in your success</h4>
 		<span>
 			<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise -->
 			<!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->

@@ -35,7 +35,7 @@ get_header();
 		</div>
 	<?php } ?>
 
-<div class="page hfeed">
+<div class="school-select-widget hfeed">
 	<div class="site">
 		<?php sofi_school_select(); ?>
 	</div>
@@ -43,7 +43,7 @@ get_header();
 
 <div class="page hfeed">
 	<div class="site">
-		
+
 		<div class="site-content">
 
 				<?php the_content(); ?>
