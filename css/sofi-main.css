@@ -6,8 +6,9 @@
  */
 
 
-/* headers */
-
+html {
+	min-width: 960px;
+}
 
 b {
 	font-weight: 700;
@@ -131,7 +132,10 @@ table.zebra th, table.zebra td {
 	width: 960px;
 }
 #page-top .header.wimg {
-	margin-top: -400px;
+	top: 40px;
+	position: absolute;
+	left: -455px;
+	margin-left: 50%;
 }
 
 #page-top .site-content {
@@ -148,6 +152,11 @@ table.zebra th, table.zebra td {
 	clear: both;
 	width: 960px;
 }
+.page-template-no-sidebar-php .site-content {
+	width: 960px;
+}
+
+
 #primary header {
 	width: 960px;
 	margin: auto;
