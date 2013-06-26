@@ -37,7 +37,7 @@ $posts_array = get_posts( $args );
 		foreach( $posts_array as $post ) : setup_postdata($post); ?>
 			<div id="testimonial-person-<?php echo $post->ID; ?>" class="testimonial-person" rel="<?php echo $post->ID; ?>">
 				<div class="testimonial-img">
-					<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+					<?php if ( has_post_thumbnail() ) { the_post_thumbnail( array(120,120), array('class' => 'desaturate') ); } ?>
 				</div>
 				<div class="testimonial-info">
 					<p class="test-type"><?php echo get_post_meta( $post->ID, 'Testimonial-Borrower_Investor', true ); ?></p>
@@ -49,7 +49,7 @@ $posts_array = get_posts( $args );
 	</div>
 	<div class="testimonials">
 		<?php foreach( $posts_array as $post ) : setup_postdata($post); ?>
-			<div id="testimonial-<?php echo $post->ID; ?>" class="testimonial" rel="<?php echo $post->ID; ?>"><?php the_content(); ?></div>
+			<div id="testimonial-<?php echo $post->ID; ?>" class="testimonial do-not-show" rel="<?php echo $post->ID; ?>"><?php the_content(); ?></div>
 		<?php endforeach; ?>
 	</div>
 

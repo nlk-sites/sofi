@@ -136,6 +136,12 @@ jQuery(document).ready(function($) {
 		}
     });
 
+    /* Testimonials Widget */
+    $('.testimonial-person').mouseover(function(){
+    	var rel = $(this).attr('rel');
+    	$('div.testimonial').addClass('do-not-show');
+    	$('div#testimonial-' + rel).removeClass('do-not-show');
+    });
 
 
 
