@@ -875,3 +875,37 @@ div#invest-home-button {
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 }
+
+/************************* Testimonials ********************/
+.testimonials-people {
+	width: 960px;
+	position: relative;
+}
+.testimonial-person {
+	float: left;
+	width: 240px;
+}
+.testimonial-img {
+	width: 130px;
+	height: 130px;
+	margin: auto;
+}
+.testimonial-info {
+	text-align: center;
+}
+.testimonial-info p {
+	margin-bottom: 2px;
+}
+.test-type {
+	font: 700 13px/13px "Noto sans", Arial, sans-serif;
+	color: #39acdb;
+	text-transform: uppercase;
+}
+.test-name {
+	font: 700 14px/14px "Noto sans", Arial, sans-serif;
+	color: #666;
+	font-style: italic;
+}
+.test-name:before {
+	content: '- ';
+}
