@@ -64,7 +64,7 @@ get_header();
 
 <div class="page hfeed">
 	<div class="site">
-				<?php /* SoFi testimonials */ ?>
+				<?php get_sidebar('testimonials'); ?>
 	</div>
 </div>
 
@@ -76,7 +76,7 @@ get_header();
 
 <div class="page page-community hfeed">
 	<div class="site">
-				<?php //get_sidebar('community'); ?>
+				<?php get_sidebar('community'); ?>
 	</div>
 </div>
 

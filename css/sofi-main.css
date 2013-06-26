@@ -23,6 +23,23 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 1rem;
 	margin-bottom: .55rem;
 }
+h1 {
+
+}
+h2 {
+	font: 700 38px/48px "Podkova", serif;
+	color: #666;
+}
+h3 {
+	font: 700 32px/44px "Noto sans", Arial, sans-serif;
+	color: #666;
+}
+h4 {
+	font: 400 22px/22px "Noto sans", Arial, sans-serif;
+	color: #666;
+}
+
+
 h1.title {
 	font: 400 62px/68px "Noto Sans", sans-serif;
 	color: #fff !important;
@@ -38,18 +55,7 @@ h4.title {
 h1.title.wimg, h4.title.wimg {
 	max-width: 600px;
 }
-.site-content h2 {
-	font: 700 38px/48px "Podkova", serif;
-	color: #666;
-}
-.site-content h3 {
-	font: 700 32px/44px "Noto sans", Arial, sans-serif;
-	color: #666;
-}
-.site-content h4 {
-	font: 400 22px/22px "Noto sans", Arial, sans-serif;
-	color: #666;
-}
+
 .widget-area h2 {
 	font: 400 30px/34px "Podkova", serif;
 	color: #666;
