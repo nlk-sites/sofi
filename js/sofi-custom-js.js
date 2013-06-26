@@ -137,6 +137,13 @@ jQuery(document).ready(function($) {
     });
 
     /* Testimonials Widget */
+
+    //first let's highlight the first testimonial
+    $('.testimonials-people > div:first-child div.testimonial-img').addClass('hovered');
+    $('.testimonials-people > div:first-child div.testimonial-img img').removeClass('desaturate');
+    $('.testimonials > div:first-child').removeClass('do-not-show');
+    
+    //then deal with hover states
     $('div.testimonial-person').mouseover(function(){
     	var rel = $(this).attr('rel');
     	$('div.testimonial-img').removeClass('hovered');

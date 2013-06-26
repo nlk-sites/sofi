@@ -889,10 +889,10 @@ div#invest-home-button {
 	width: 240px;
 	height: 220px;
 	margin: auto;
-	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block-empty.png') no-repeat 50%;
+	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block-empty.png') no-repeat 1px;
 }
 .testimonial-img.hovered {
-	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block.png') no-repeat 50%;
+	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block.png') no-repeat 5px;
 }
 .testimonial-img img {
 	width: 120px;
