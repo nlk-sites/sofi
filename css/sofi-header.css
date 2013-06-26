@@ -77,8 +77,10 @@ li.top-li > a:hover, .hovered-top-menu > a {
 	padding-bottom: 17px !important;
 	color: #29c4f4;
 }
-li.top-li a:hover, li.current-menu-item a {
-	color: #29c4f4;
+li.top-li a:hover,
+li.current-menu-item a,
+li.current-menu-ancestor a {
+	color: #29c4f4 !important;
 	box-sizing: border-box;
 }
 
