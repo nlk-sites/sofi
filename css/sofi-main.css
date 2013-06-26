@@ -892,7 +892,7 @@ div#invest-home-button {
 	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block-empty.png') no-repeat 1px;
 }
 .testimonial-img.hovered {
-	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block.png') no-repeat 5px;
+	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block.png') no-repeat 1px;
 }
 .testimonial-img img {
 	width: 120px;
@@ -925,6 +925,7 @@ div#invest-home-button {
 }
 .testimonials {
 	clear: both;
+	min-height: 120px;
 }
 .testimonials p {
 	font: 400 30px/34px "Noto sans", Arial, sans-serif;
