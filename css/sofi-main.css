@@ -23,6 +23,7 @@ strong {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Noto sans", Arial, sans-serif;
+	font-weight: 400;
 	color: #666;
 	letter-spacing: -1px;
 	margin-top: 1rem;
@@ -35,13 +36,11 @@ h1 {
 	font-size: 62px;
 	font-size: 3.875em;
 	line-height: 68px;
-	line-height: 4.25em;
 }
 h2 {
 	font-size: 38px;
 	font-size: 2.375em;
 	line-height: 48px;
-	line-height: 3em;
 	font-weight: 700;
 }
 h3 {
