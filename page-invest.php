@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: How It Works
+ * Template Name: Invest
  *
  *
  * @package SoFi
@@ -30,9 +30,9 @@ get_header(); ?>
 		</div>
 	<?php } ?>
 
-<div class="page page-howitworks hfeed">
+<div class="page page-invest hfeed">
 	<div class="site">
-		<?php get_sidebar('howitworks'); ?>
+		<?php get_sidebar('invest'); ?>
 	</div>
 </div>
 
