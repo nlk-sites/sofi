@@ -32,7 +32,7 @@ $posts_array = get_posts( $args );
 
 <div class="testimonials-details">
 	
-	<div>
+	<div class="testimonials-people">
 		<?php 
 		foreach( $posts_array as $post ) : setup_postdata($post); ?>
 			<div id="testimonial-person-<?php echo $post->ID; ?>" class="testimonial-person">
@@ -40,15 +40,17 @@ $posts_array = get_posts( $args );
 					<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
 				</div>
 				<div class="testimonial-info">
-					<p class="test-type"><?php echo get_post_meta( $post->ID, 'Testimonial-Borrower_Investor' ); ?></p>
+					<p class="test-type"><?php echo get_post_meta( $post->ID, 'Testimonial-Borrower_Investor', true ); ?></p>
 					<p class="test-name"><?php the_title(); ?></p>
-					<p class="test-school"><?php echo get_post_meta( $post->ID, 'Testimonial-School' ); ?></p>
+					<p class="test-school"><?php echo get_post_meta( $post->ID, 'Testimonial-School', true ); ?></p>
 				</div>
 			</div>
 		<?php endforeach; ?>
-
-		<div class="testimonial"></div>
-
+	</div>
+	<div class="testimonials">
+		<?php foreach( $posts_array as $post ) : setup_postdata($post); ?>
+			<div id="testimonial-<?php echo $post->ID; ?>" class="testimonial"><?php the_content(); ?></div>
+		<?php endforeach; ?>
 	</div>
 
 </div>
