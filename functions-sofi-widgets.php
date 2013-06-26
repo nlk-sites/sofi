@@ -126,7 +126,6 @@ function sofi_calculator($render = true)
 		</div>
 	<?php }
 }
-add_shortcode( 'calculator' , 'sofi_calculator' );
 
 function sofi_homepage_nav($render = true) 
 {
@@ -220,8 +219,8 @@ function show_refi_graph($render = true)
 	<?php }
 }
 
-
-function sofi_school_select($render = true) {
+function sofi_school_select($render = true) 
+{
 	if ($render) { ?>
 		<div class="school-selector full-width">
 				

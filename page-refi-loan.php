@@ -38,7 +38,7 @@ get_header();
 <div class="page hfeed">
 	<div class="site">
 
-		<?php sofi_school_select(); } ?>
+		<?php sofi_school_select(); ?>
 
 		<div class="site-content">
 
