@@ -802,13 +802,13 @@ div#invest-home-button {
 	width: 960px !important;
 	height: 140px;
 	padding: 0;
-	border: 1px solid #ccc;
 	box-sizing: border-box;
 	-webkit-border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
 	border-radius: 10px 10px 0 0;
 	position: absolute;
-	top: 323px;
+	top: 25px;
+	overflow: hidden;
 }
 
 .school-selector .left-col {

@@ -25,12 +25,6 @@ get_header();
 			<div class="header wimg">
 				<h1 class="title wimg"><?php echo get_the_title(); ?></h1>
 				<h4 class="title wimg"><?php echo get_post_meta( get_the_ID(), 'sub-title', true ); ?></h4>
-				
-
-				<?php if ( get_post_meta( get_the_ID(), 'sub-title', true ) == true ) {
-					sofi_school_select();
-				} ?>
-
 			</div>
 		</div>
 	<?php } else { ?>
@@ -43,6 +37,9 @@ get_header();
 
 <div class="page hfeed">
 	<div class="site">
+
+		<?php sofi_school_select(); } ?>
+
 		<div class="site-content">
 
 				<?php the_content(); ?>
