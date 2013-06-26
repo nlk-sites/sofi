@@ -42,9 +42,9 @@ get_header(); ?>
 <div class="page-invest-banner hfeed">
 	<div class="site">
 		<div>
-			<h4 class="podkova">High-quality borrowers, transparency, community, and rigorous<br />
+			<h3 class="podkova">High-quality borrowers, transparency, community, and rigorous<br />
 				underwriting standards help minimize default rates and<br />
-				boost potential returns.</h4>
+				boost potential returns.</h3>
 		</div>
 		<img src="/wp-content/themes/sofiwp/images/invest-real-impact-banner.jpg" alt="SoFi - Real Returns" />
 		<?php //get_sidebar('invest'); ?>
