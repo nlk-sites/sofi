@@ -9,7 +9,8 @@
  */
 
 
-function sofi_calculator($render = true) {
+function sofi_calculator($render = true) 
+{
 	if ($render) { ?>
 		<div class="savings-calculator full-width">
 			<div class="calc-title full-width">
@@ -125,6 +126,7 @@ function sofi_calculator($render = true) {
 		</div>
 	<?php }
 }
+add_shortcode( 'calculator' , 'sofi_calculator' );
 
 function sofi_homepage_nav($render = true) {
 	if ($render) { ?>

@@ -119,6 +119,10 @@ table.zebra th, table.zebra td {
 }
 #page-top.wimg {
 	height: 435px;
+	width: 1900px;
+	position: relative;
+	left: -950px;
+	margin-left: 50%;
 }
 #page-top .header {
 	margin-left: auto;
