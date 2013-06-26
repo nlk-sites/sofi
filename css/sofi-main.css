@@ -771,10 +771,20 @@ div#invest-home-button {
 
 /*************************** invest page banner **********************************/
 .page-invest-banner {
-	background: url('/wp-content/themes/sofiwp/images/invest-real-impact-banner.jpg') no-repeat 0 0;
+	position: relative;
+	height: 860px;
+	overflow: visible;
+	text-align: center;
+	color: #666;
 }
-
-
+.page-invest-banner img {
+	width: 1604px;
+	height: 419px;
+	position: absolute;
+	left: -65px;
+	top: 160px;
+	z-index: 0;
+}
 
 
 

@@ -41,6 +41,7 @@ get_header(); ?>
 
 <div class="page-invest-banner hfeed">
 	<div class="site">
+		<img src="/wp-content/themes/sofiwp/images/invest-real-impact-banner.jpg" alt="SoFi - Real Returns" />
 		<?php //get_sidebar('invest'); ?>
 	</div>
 </div>
