@@ -44,7 +44,7 @@ get_header(); ?>
 
 <div class="page-testimonials hfeed">
 	<div class="site">
-		<?php special_recent_posts( press_slider_args(2) ); ?>
+		<?php get_sidebar('testimonials'); ?>
 	</div>
 </div>
 
