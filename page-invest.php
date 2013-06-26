@@ -30,26 +30,31 @@ get_header(); ?>
 		</div>
 	<?php } ?>
 
-<div class="page page-invest hfeed">
-	<div class="site">
-		<?php get_sidebar('invest'); ?>
-	</div>
-</div>
-
-<div class="page" class="page hfeed">
-	<div class="site">
-		<div class="site-content">
-			<?php the_content(); ?>
-		</div>
-		<?php get_sidebar(); ?>
-	</div>
-</div>
-
 <?php endwhile; // end of the loop. ?>
+
+
+<div class="page-featured hfeed">
+	<div class="site">
+		<?php //get_sidebar('featured'); ?>
+	</div>
+</div>
+
+<div class="page-invest-banner hfeed">
+	<div class="site">
+		<?php //get_sidebar('invest'); ?>
+	</div>
+</div>
+
 
 <div class="page-testimonials hfeed">
 	<div class="site">
 		<?php get_sidebar('testimonials'); ?>
+	</div>
+</div>
+
+<div class="page-testimonials hfeed">
+	<div class="site">
+		<?php //get_sidebar('faq'); ?>
 	</div>
 </div>
 

@@ -769,36 +769,9 @@ div#invest-home-button {
 	text-decoration: none;
 }
 
-/*************************** testimonials **********************************/
-.page-testimonials {
-	
-}
-.page-testimonials .srp-widget-container {
-
-}
-.page-testimonials .srp-widget-singlepost {
-	position: relative;
-	width: 230px;
-	float: left;
-}
-.page-testimonials .srp-widget-singlepost div {
-	display: block;
-}
-.page-testimonials .srp-thumbnail-box {
-	width: 230px;
-	margin: 0;
-	padding: 0;
-}
-.page-testimonials .srp-thumbnail-box img {
-	position: absolute;
-	left: 50px;
-	top: 30px;
-}
-.page-testimonials .srp-widget-singlepost div.srp-content-box {}
-.page-testimonials .srp-widget-singlepost div.srp-content-box .srp-widget-excerpt {
-	position: absolute;
-	top: 240px;
-	width: 960px;
+/*************************** invest page banner **********************************/
+.page-invest-banner {
+	background: url('/wp-content/themes/sofiwp/images/invest-real-impact-banner.jpg') no-repeat 0 0;
 }
 
 
