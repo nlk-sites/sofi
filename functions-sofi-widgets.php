@@ -128,7 +128,8 @@ function sofi_calculator($render = true)
 }
 add_shortcode( 'calculator' , 'sofi_calculator' );
 
-function sofi_homepage_nav($render = true) {
+function sofi_homepage_nav($render = true) 
+{
 	if ($render) { ?>
 		<div id="home-wide-navbar">
 			<ul>
@@ -138,10 +139,10 @@ function sofi_homepage_nav($render = true) {
 			</ul>
 		</div>
 	<?php }
-
 }
 
-function press_slider_args($id = NULL) {
+function press_slider_args($id = NULL) 
+{
 
 	// for usage/array details: http://wordpress.org/plugins/special-recent-posts/installation/
 
@@ -207,7 +208,8 @@ function press_slider_args($id = NULL) {
 	return $args;
 }
 
-function show_refi_graph($render = true) {
+function show_refi_graph($render = true) 
+{
 	if ($render) { ?>
 		<div class="theGraph refi-rates refi-with">
 			<div class="refi-with"></div>
@@ -222,7 +224,6 @@ function show_refi_graph($render = true) {
 function sofi_school_select($render = true) {
 	if ($render) { ?>
 		<div class="school-selector full-width">
-			<div class="full-width">
 				
 				<div class="left-col">
 				</div>
@@ -230,7 +231,8 @@ function sofi_school_select($render = true) {
 				<div class="right-col">
 				</div>
 			
-			</div>
+				<div class="school-selector-contents do-not-show">
+				</div>
 		</div>
 	<?php }
 }

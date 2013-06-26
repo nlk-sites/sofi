@@ -34,6 +34,10 @@ h3 {
 	font: 700 32px/44px "Noto sans", Arial, sans-serif;
 	color: #666;
 }
+h3.podkova {
+	font: 400 32px/44px "Podkova", serif;
+	color: #666;
+}
 h4 {
 	font: 400 22px/22px "Noto sans", Arial, sans-serif;
 	color: #666;
@@ -776,10 +780,11 @@ div#invest-home-button {
 /*************************** invest page banner **********************************/
 .page-invest-banner {
 	position: relative;
-	height: 860px;
+	height: 560px;
 	overflow: visible;
 	text-align: center;
 	color: #666;
+	margin-bottom: 40px;
 }
 .page-invest-banner img {
 	width: 1604px;
