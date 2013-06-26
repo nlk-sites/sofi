@@ -884,6 +884,7 @@ div#invest-home-button {
 .testimonial-person {
 	float: left;
 	width: 240px;
+	cursor: pointer;
 }
 .testimonial-img {
 	width: 240px;
@@ -895,8 +896,8 @@ div#invest-home-button {
 	background: url('/wp-content/themes/sofiwp/images/testimonials/testimonial-block.png') no-repeat 1px;
 }
 .testimonial-img img {
-	width: 120px;
-	height: 120px;
+	width: 122px;
+	height: 122px;
 	position: relative;
 	left: 65px;
 	top: 34px;

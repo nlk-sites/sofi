@@ -47,6 +47,12 @@ get_header(); ?>
 
 <?php endwhile; // end of the loop. ?>
 
+<div class="page-testimonials hfeed">
+	<div class="site">
+		<?php get_sidebar('testimonials'); ?>
+	</div>
+</div>
+
 <div class="page hfeed">
 	<div class="site">
 
