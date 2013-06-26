@@ -35,7 +35,7 @@ $posts_array = get_posts( $args );
 	<div class="testimonials-people">
 		<?php 
 		foreach( $posts_array as $post ) : setup_postdata($post); ?>
-			<div id="testimonial-person-<?php echo $post->ID; ?>" class="testimonial-person">
+			<div id="testimonial-person-<?php echo $post->ID; ?>" class="testimonial-person" rel="<?php echo $post->ID; ?>">
 				<div class="testimonial-img">
 					<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
 				</div>
@@ -49,7 +49,7 @@ $posts_array = get_posts( $args );
 	</div>
 	<div class="testimonials">
 		<?php foreach( $posts_array as $post ) : setup_postdata($post); ?>
-			<div id="testimonial-<?php echo $post->ID; ?>" class="testimonial"><?php the_content(); ?></div>
+			<div id="testimonial-<?php echo $post->ID; ?>" class="testimonial" rel="<?php echo $post->ID; ?>"><?php the_content(); ?></div>
 		<?php endforeach; ?>
 	</div>
 
