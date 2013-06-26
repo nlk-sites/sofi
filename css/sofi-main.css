@@ -374,6 +374,7 @@ and (min-width : 960px) {
 /************************** Home Page Borrower Graph ******************************/
 .page-borrow {
 	padding-top: 20px;
+	margin-bottom: 80px;
 }
 .borrower-details {
 	width: 100%;
@@ -553,7 +554,6 @@ td.brc-fix {
 /************************************* HOME PAGE INVEST **************************************/
 
 .page-invest {
-	margin-top: 80px;
 	padding-top: 80px;
 	background: rgb(232,232,232); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(232,232,232,1) 0%, rgba(251,251,251,1) 25%, rgba(251,251,251,1) 100%); /* FF3.6+ */
