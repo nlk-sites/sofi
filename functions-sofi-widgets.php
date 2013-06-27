@@ -235,7 +235,7 @@ function sofi_school_select($render = true)
 					<div class="heading">Refinance your loan from multiple schools or programs</div>
 					<div class="select">
 
-
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 						<style>
   .custom-combobox {
     position: relative;
