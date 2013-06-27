@@ -183,133 +183,140 @@ jQuery(document).ready(function($) {
 
 /* Calculator */
 
-    /* refi_calculator.js */
-	/* JS functions specifically for the refi calculator */
+/* refi_calculator.js */
+/* JS functions specifically for the refi calculator */
 
-	jQuery(document).ready(function($) {
-		
-		var self = this;
+jQuery(document).ready(function($) {
+	
+	var self = this;
 
-		$('input#calculateButton').click(function(event) {
-			event.preventDefault();
-			var balance = $('input.outstanding-balance').val();
-			var interest = $('input.interest-rate').val();
-			var term = $('input.term').val();
-			balance = balance.replace(/\$/g, '');
-			interest = interest.replace(/\%/g, '');
-			calculate(balance, interest, term);
-		});
-
-		// Allow only numbers and decimals
-		function onKeyDown(event) {
-		    if 	(event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 190 || event.keyCode == 110 || event.keyCode == 188 || event.keyCode == 13 || 
-		        (event.keyCode == 65 && event.ctrlKey === true) || 
-		        (event.keyCode >= 35 && event.keyCode <= 39)) {
-					return;
-		    } else {
-		        if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
-		            event.preventDefault(); 
-		        }   
-		    }
-		}
-		$('input.outstanding-balance').on('keydown', onKeyDown);
-		$('input.interest-rate').on('keydown', onKeyDown);
-		$('input.term').on('keydown', onKeyDown);
-
-		function cleanFloat(num) {
-			return parseFloat(num.replace(/,/g, ''));
-		}
-
-		function formatFloat(num, prefix) {
-			num = roundNumber(num, 2);
-			prefix = prefix || '';
-			return prefix + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-		}
-
-		function roundNumber(num, dec) {
-			var result = Math.round(num * Math.pow(10, dec))/Math.pow(10, dec);
-			return result.toFixed(2);
-		}
-
-		function calculatePayment(principal, interest, term) {
-			principal = cleanFloat(principal);
-			interest = cleanFloat(interest);
-			term = cleanFloat(term);
-			interest = interest/100/12; // Turn interest rate into monthly interest rate percentage
-			var payment = (interest + (interest / (Math.pow(1 + interest, term) - 1))) * principal;
-			return roundNumber(payment, 2);
-		}
-
-		function formatResult (result) {
-			var html = '';
-			html = (parseInt(result) > 0)
-				? '<span class="you-save">You could Save</span><span class="total-savings">' + formatFloat(result, '$') + '</span>'
-				: '<span class="no-savings">No Savings</span>';
-			return html;
-		}
-
-
-		function calculate(balance, interest, term) {
-			var cleanBalance = cleanFloat(balance);
-			var cleanInterest = cleanFloat(interest);
-			var cleanTerm = cleanFloat(term);
-			
-			// If calc is already visible, slide it up, then later, slide down with new numbers.
-			//if($('.calculator-output').is(':visible')) {
-			//	$('.calculator-output').slideUp();
-			//}
-
-			$('.calculator-output tr.output-outstanding td').not(':first').text('$' + balance);
-			$('.calculator-output td.output-interest').text(interest + '%');
-			$('.calculator-output td.output-term').text(term);
-
-			// Populate monthly payments
-
-			var existingPayment = calculatePayment(balance, interest, term);
-			var sofi5Payment = calculatePayment(balance, '5.49', '60');
-			var sofi10Payment = calculatePayment(balance, '6.125', '120');
-			var sofi15Payment = calculatePayment(balance, '6.625', '180');
-			var sofiSavingsPayment = calculatePayment(balance, '5.99', term);
-
-			$('.calculator-output td.output-monthly-existing').text(formatFloat(existingPayment, '$'));
-			$('.calculator-output td.output-monthly-sofi-5').text(formatFloat(sofi5Payment, '$'));
-			$('.calculator-output td.output-monthly-sofi-10').text(formatFloat(sofi10Payment, '$'));
-			$('.calculator-output td.output-monthly-sofi-15').text(formatFloat(sofi15Payment, '$'));
-			$('.calculator-output td.output-monthly-sofi-savings').text(formatFloat(sofiSavingsPayment, '$'));
-
-			// Populate expected interest payments
-
-			var existingInterestPayment = (existingPayment * cleanTerm) - cleanBalance;
-			var sofi5InterestPayment = (sofi5Payment * 60) - cleanBalance;
-			var sofi10InterestPayment = (sofi10Payment * 120) - cleanBalance;
-			var sofi15InterestPayment = (sofi15Payment * 180) - cleanBalance;
-			var sofiSavingsInterestPayment = (sofiSavingsPayment * cleanTerm) - cleanBalance;
-
-			$('.calculator-output td.output-interest-payments-existing').text(formatFloat(existingInterestPayment, '$'));
-			$('.calculator-output td.output-interest-payments-sofi-5').text(formatFloat(sofi5InterestPayment, '$'));
-			$('.calculator-output td.output-interest-payments-sofi-10').text(formatFloat(sofi10InterestPayment, '$'));
-			$('.calculator-output td.output-interest-payments-sofi-15').text(formatFloat(sofi15InterestPayment, '$'));
-			$('.calculator-output td.output-interest-payments-sofi-savings').text(formatFloat(sofiSavingsInterestPayment, '$'));
-
-			// Populate expected interest savings
-
-			var sofi5Savings = existingInterestPayment - sofi5InterestPayment;
-			var sofi10Savings = existingInterestPayment - sofi10InterestPayment;
-			var sofi15Savings = existingInterestPayment - sofi15InterestPayment;
-			var sofiSavings = existingInterestPayment - sofiSavingsInterestPayment;
-
-			sofi5Savings = formatResult(sofi5Savings);
-			sofi10Savings = formatResult(sofi10Savings);
-			sofi15Savings = formatResult(sofi15Savings);
-			sofiSavings = formatResult(sofiSavings);
-
-			$('.calculator-output td.output-savings-sofi-5').html(sofi5Savings);
-			$('.calculator-output td.output-savings-sofi-10').html(sofi10Savings);
-			$('.calculator-output td.output-savings-sofi-15').html(sofi15Savings);
-			$('.calculator-output td.output-savings-sofi-savings').html(sofiSavings);
-			$('.savings-calculator').addClass('square-bottom');
-			$('.calculator-output').slideDown();
-		}
-
+	$('input#calculateButton').click(function(event) {
+		event.preventDefault();
+		var balance = $('input.outstanding-balance').val();
+		var interest = $('input.interest-rate').val();
+		var term = $('input.term').val();
+		balance = balance.replace(/\$/g, '');
+		interest = interest.replace(/\%/g, '');
+		calculate(balance, interest, term);
 	});
+
+	// Allow only numbers and decimals
+	function onKeyDown(event) {
+	    if 	(event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 190 || event.keyCode == 110 || event.keyCode == 188 || event.keyCode == 13 || 
+	        (event.keyCode == 65 && event.ctrlKey === true) || 
+	        (event.keyCode >= 35 && event.keyCode <= 39)) {
+				return;
+	    } else {
+	        if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+	            event.preventDefault(); 
+	        }   
+	    }
+	}
+	$('input.outstanding-balance').on('keydown', onKeyDown);
+	$('input.interest-rate').on('keydown', onKeyDown);
+	$('input.term').on('keydown', onKeyDown);
+
+	function cleanFloat(num) {
+		return parseFloat(num.replace(/,/g, ''));
+	}
+
+	function formatFloat(num, prefix) {
+		num = roundNumber(num, 2);
+		prefix = prefix || '';
+		return prefix + num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
+	function roundNumber(num, dec) {
+		var result = Math.round(num * Math.pow(10, dec))/Math.pow(10, dec);
+		return result.toFixed(2);
+	}
+
+	function calculatePayment(principal, interest, term) {
+		principal = cleanFloat(principal);
+		interest = cleanFloat(interest);
+		term = cleanFloat(term);
+		interest = interest/100/12; // Turn interest rate into monthly interest rate percentage
+		var payment = (interest + (interest / (Math.pow(1 + interest, term) - 1))) * principal;
+		return roundNumber(payment, 2);
+	}
+
+	function formatResult (result) {
+		var html = '';
+		html = (parseInt(result) > 0)
+			? '<span class="you-save">You could Save</span><span class="total-savings">' + formatFloat(result, '$') + '</span>'
+			: '<span class="no-savings">No Savings</span>';
+		return html;
+	}
+
+
+	function calculate(balance, interest, term) {
+		var cleanBalance = cleanFloat(balance);
+		var cleanInterest = cleanFloat(interest);
+		var cleanTerm = cleanFloat(term);
+		
+		// If calc is already visible, slide it up, then later, slide down with new numbers.
+		//if($('.calculator-output').is(':visible')) {
+		//	$('.calculator-output').slideUp();
+		//}
+
+		$('.calculator-output tr.output-outstanding td').not(':first').text('$' + balance);
+		$('.calculator-output td.output-interest').text(interest + '%');
+		$('.calculator-output td.output-term').text(term);
+
+		// Populate monthly payments
+
+		var existingPayment = calculatePayment(balance, interest, term);
+		var sofi5Payment = calculatePayment(balance, '5.49', '60');
+		var sofi10Payment = calculatePayment(balance, '6.125', '120');
+		var sofi15Payment = calculatePayment(balance, '6.625', '180');
+		var sofiSavingsPayment = calculatePayment(balance, '5.99', term);
+
+		$('.calculator-output td.output-monthly-existing').text(formatFloat(existingPayment, '$'));
+		$('.calculator-output td.output-monthly-sofi-5').text(formatFloat(sofi5Payment, '$'));
+		$('.calculator-output td.output-monthly-sofi-10').text(formatFloat(sofi10Payment, '$'));
+		$('.calculator-output td.output-monthly-sofi-15').text(formatFloat(sofi15Payment, '$'));
+		$('.calculator-output td.output-monthly-sofi-savings').text(formatFloat(sofiSavingsPayment, '$'));
+
+		// Populate expected interest payments
+
+		var existingInterestPayment = (existingPayment * cleanTerm) - cleanBalance;
+		var sofi5InterestPayment = (sofi5Payment * 60) - cleanBalance;
+		var sofi10InterestPayment = (sofi10Payment * 120) - cleanBalance;
+		var sofi15InterestPayment = (sofi15Payment * 180) - cleanBalance;
+		var sofiSavingsInterestPayment = (sofiSavingsPayment * cleanTerm) - cleanBalance;
+
+		$('.calculator-output td.output-interest-payments-existing').text(formatFloat(existingInterestPayment, '$'));
+		$('.calculator-output td.output-interest-payments-sofi-5').text(formatFloat(sofi5InterestPayment, '$'));
+		$('.calculator-output td.output-interest-payments-sofi-10').text(formatFloat(sofi10InterestPayment, '$'));
+		$('.calculator-output td.output-interest-payments-sofi-15').text(formatFloat(sofi15InterestPayment, '$'));
+		$('.calculator-output td.output-interest-payments-sofi-savings').text(formatFloat(sofiSavingsInterestPayment, '$'));
+
+		// Populate expected interest savings
+
+		var sofi5Savings = existingInterestPayment - sofi5InterestPayment;
+		var sofi10Savings = existingInterestPayment - sofi10InterestPayment;
+		var sofi15Savings = existingInterestPayment - sofi15InterestPayment;
+		var sofiSavings = existingInterestPayment - sofiSavingsInterestPayment;
+
+		sofi5Savings = formatResult(sofi5Savings);
+		sofi10Savings = formatResult(sofi10Savings);
+		sofi15Savings = formatResult(sofi15Savings);
+		sofiSavings = formatResult(sofiSavings);
+
+		$('.calculator-output td.output-savings-sofi-5').html(sofi5Savings);
+		$('.calculator-output td.output-savings-sofi-10').html(sofi10Savings);
+		$('.calculator-output td.output-savings-sofi-15').html(sofi15Savings);
+		$('.calculator-output td.output-savings-sofi-savings').html(sofiSavings);
+		$('.savings-calculator').addClass('square-bottom');
+		$('.calculator-output').slideDown();
+	}
+
+});
+
+
+/* Select School combo box */
+jQuery(document).ready(function($) {
+	$('input.custom-combobox-input').attr('placeholder', 'Select Your School');
+});
+
 	
