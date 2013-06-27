@@ -99,6 +99,9 @@ li {
 }
 
 
+/************
+* 	TABLES	*
+************/
 table {
 	width: 100%;
 	border: 1px solid #ccc;
@@ -122,6 +125,28 @@ table.zebra {
 table.zebra th, table.zebra td {
 	border: none;
 	padding: 6px 12px;
+}
+
+/* PAGES */
+
+.w340 {
+	width: 340px;
+	float: left;
+}
+.w620 {
+	width: 620px;
+	float: left;
+}
+
+
+/* Backgrounds */
+.bg-grey {
+	background-color: #666;
+	background: url('/wp-content/themes/sofiwp/images/bg-grey.jpg');
+}
+.bg-blue {
+	background-color: #23a5d9;
+	background: url('/wp-content/themes/sofiwp/images/bg-blue.jpg');
 }
 
 #primary,
