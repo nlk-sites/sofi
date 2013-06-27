@@ -225,9 +225,21 @@ function sofi_school_select($render = true)
 		<div class="school-selector full-width">
 				
 				<div class="bg-grey w620">
+					<div class="small-text">Rates as low as</div>
+					<div class="big-text">5.74% <span>APR<sup>1</sup></span></div>
+					<div class="small-text">Rates with AutoPay<sup>2</sup></div>
+					<div class="big-text">5.49% <span>APR<sup>1</sup></span></div>
+					<div class="sub-text"><b>Refinance Your Loans Today?</b> Find your school.</div>
 				</div>
-
 				<div class="bg-blue w340">
+					<div class="heading">Refinance your loan from multiple schools or programs</div>
+					<div class="select">
+						<form>
+							<select name="select-school" id="select-school">
+							</select>
+						</form>
+					</div>
+					<div class="suggestion">Don't see your school? <a href="#">Suggest a Program</a></div>
 				</div>
 			
 				<div class="school-selector-contents do-not-show">
