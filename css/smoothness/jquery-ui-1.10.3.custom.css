@@ -74,6 +74,14 @@
 	background-repeat: no-repeat;
 }
 
+a.ui-button-icon-only {
+	width: 28px;
+}
+span.ui-button-icon-primary {
+	margin-top: 5px;
+	margin-left: 6px;
+}
+
 
 /* Misc visuals
 ----------------------------------*/

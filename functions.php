@@ -167,7 +167,7 @@ function sofi_scripts_styles() {
 	wp_enqueue_style( 'sofi-footer', get_template_directory_uri() . '/css/sofi-footer.css', array( 'sofi-style' ), date('Ymd') );
 	wp_enqueue_style( 'sofi-main', get_template_directory_uri() . '/css/sofi-main.css', array( 'sofi-style' ), date('Ymd') );
 	wp_enqueue_style( 'sofi-blog', get_template_directory_uri() . '/css/sofi-blog.css', array( 'sofi-style' ), date('Ymd') );
-	wp_enqueue_style( 'jquery-ui-smoothness', get_template_directory_uri() . '/css/smoothness/jquery-ui-1.10.3.custom.min.css', array( 'sofi-style' ), date('Ymd') );
+	wp_enqueue_style( 'jquery-ui-smoothness', get_template_directory_uri() . '/css/smoothness/jquery-ui-1.10.3.custom.css', array( 'sofi-style' ), date('Ymd') );
 
 	/*
 	 * Loads the Internet Explorer specific stylesheet.

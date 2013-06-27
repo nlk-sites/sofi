@@ -191,7 +191,7 @@ table.zebra th, table.zebra td {
 	/* margin: 90px 0 40px; */
 	padding-bottom: 0px;
 	height: 100px;
-	background: url('/wp-content/themes/sofiwp/images/default-pg-header-bg-blue.jpg');
+	background: url('/wp-content/themes/sofiwp/images/bg-blue.jpg');
 }
 .site {
 	overflow: visible;

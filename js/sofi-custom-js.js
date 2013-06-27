@@ -337,15 +337,15 @@ jQuery(document).ready(function($) {
 	          .val( value )
 	          .attr( "title", "Select Your School" )
 	          .attr( "placeholder", "Select Your School" )
-	          .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left select-school" )
+	          .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
 	          .autocomplete({
 	            delay: 0,
 	            minLength: 0,
 	            source: $.proxy( this, "_source" )
-	          })
-	          .tooltip({
-	            tooltipClass: "ui-state-highlight"
 	          });
+	          //.tooltip({
+	          //  tooltipClass: "ui-state-highlight"
+	          //});
 	 
 	        this._on( this.input, {
 	          autocompleteselect: function( event, ui ) {
@@ -366,7 +366,7 @@ jQuery(document).ready(function($) {
 	        $( "<a>" )
 	          .attr( "tabIndex", -1 )
 	          .attr( "title", "Show All Items" )
-	          .tooltip()
+	          //.tooltip()
 	          .appendTo( this.wrapper )
 	          .button({
 	            icons: {

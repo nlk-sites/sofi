@@ -219,6 +219,23 @@ function show_refi_graph($render = true)
 	<?php }
 }
 
+function parse_schools_json( $asOptList = true ) 
+{
+	$json_file = get_site_url();
+	$json_file .= '/wp-content/themes/sofiwp/json-includes/universityWebInfo2.json';
+	$json_content = file_get_contents( $json_file );
+	$json = json_decode( $json_content, true );
+	if ( $asOptList ) 
+	{
+		$str = '<option value=""></option>';
+		foreach ( $json as $j )
+		{
+			$str .= '<option value="' . $j['slug'] . '">' . $j['schoolName'] . '</option>';
+		}
+		return $str;
+	}
+}
+
 function sofi_school_select($render = true) 
 {
 	if ($render) { ?>
@@ -236,7 +253,7 @@ function sofi_school_select($render = true)
 					<div class="select">
 						<form>
 							<select name="select-school" id="combobox" class="select-school">
-								<?php parse_schools_json(true); ?>
+								<?php echo parse_schools_json(); ?>
 							</select>
 						</form>
 					</div>
@@ -249,17 +266,3 @@ function sofi_school_select($render = true)
 	<?php }
 }
 
-function parse_schools_json( $asOptList = false ) 
-{
-	$json_file = file_get_contents('/wp-content/themes/sofiwp/json-includes/universityWebInfo2.json');
-	$json = json_decode($jason_array, true);
-	if ( $asOptList ) 
-	{
-		foreach ( $json as $j )
-		{
-			?>
-			<option value="<?php echo $j['slug']; ?>"><?php echo $j['schoolName']; ?></option>
-			<?php
-		}
-	}
-}
