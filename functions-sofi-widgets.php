@@ -261,6 +261,14 @@ function sofi_school_select($render = true)
 				</div>
 			
 				<div class="school-selector-contents do-not-show">
+					<div class="program-for-school">
+						<h4>Select Your Program for: <span id="school-name"></span></h4>
+						<p>Find your program of study and click the "Request Invite" or "Apply Now" button for your program. Only one option will be provided depending on available funding for the program.</p>
+						<p>If funding is not currently available , you will be asked to create an account and request an invitation from us. We will then notify you as soon as funds are available for your program.</p>
+						<div class="school-program-options">
+							<div></div>
+						</div>
+					</div>
 				</div>
 		</div>
 	<?php }
