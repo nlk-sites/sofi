@@ -863,6 +863,13 @@ div#invest-home-button {
 	width: 100px;
 	margin-top: 20px;
 }
+.big-text {
+	font: 700 44px/30px "Noto sans", Arial, sans-serif;
+	font-style: italic;
+	color: #fff;
+	margin-top: 26px;
+	margin-right: 22px;
+}
 
 
 
