@@ -896,6 +896,13 @@ div#invest-home-button {
 .school-selector #select-school {
 	width: 100%;
 }
+.school-selector .suggestion {
+	color: #fff;
+	margin: 10px 34px;
+}
+.school-selector .suggestion a {
+	color: #fff;
+}
 
 
 
