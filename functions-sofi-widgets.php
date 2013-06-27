@@ -239,7 +239,7 @@ function sofi_school_select($render = true)
 							</select>
 						</form>
 					</div>
-					<div class="suggestion">Don't see your school? <a href="#">Suggest a Program</a></div>
+					<div class="suggestion"><small>Don't see your school? <a href="#">Suggest a Program</a></small></div>
 				</div>
 			
 				<div class="school-selector-contents do-not-show">
