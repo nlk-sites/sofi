@@ -830,6 +830,9 @@ div#invest-home-button {
 
 
 /************************* School Widget ******************************/
+.school-select-widget {
+	margin-bottom: -160px;
+}
 .school-selector {
 	width: 960px !important;
 	height: 140px;
