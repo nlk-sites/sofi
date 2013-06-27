@@ -617,7 +617,7 @@ td.brc-fix {
 /************************************* HOME PAGE INVEST **************************************/
 
 .page-invest {
-	padding-top: 80px;
+	padding-top: 20px;
 	background: rgb(232,232,232); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(232,232,232,1) 0%, rgba(251,251,251,1) 25%, rgba(251,251,251,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,232,232,1)), color-stop(25%,rgba(251,251,251,1)), color-stop(100%,rgba(251,251,251,1))); /* Chrome,Safari4+ */
@@ -627,8 +627,8 @@ td.brc-fix {
 	background: linear-gradient(to bottom, rgba(232,232,232,1) 0%,rgba(251,251,251,1) 25%,rgba(251,251,251,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#fbfbfb',GradientType=0 ); /* IE6-9 */
 }
-.invest-details {
-	margin-bottom: 80px;
+.home .page-invest {
+	padding-top: 80px;
 }
 #real-returns {
 	position: relative;
@@ -664,7 +664,7 @@ td.brc-fix {
 	position: relative;
 	clear: both;
 	float: left;
-	top: 240px;
+	top: 180px;
 }
 div#invest-home-button {
 	position: relative;
@@ -693,6 +693,9 @@ div#invest-home-button {
 .howitworks-details h2 {
 	font: 400 44px/60px 'Noto Sans', sans-serif;
 	text-shadow: 1px 1px 4px #000;
+	padding-top: 20px;
+}
+.home .howitworks-details h2 {
 	padding-top: 60px;
 }
 .howitworks-details h4 {
@@ -702,7 +705,7 @@ div#invest-home-button {
 #learn-more-community {
 	width: 400px;
 	position: absolute;
-	top: 740px;
+	top: 746px;
 	margin: auto 50%;
 	left: -200px;
 }
