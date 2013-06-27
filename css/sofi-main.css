@@ -207,6 +207,14 @@ table.zebra th, table.zebra td {
 	width: 960px;
 	margin: auto;
 }
+
+
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
 .clr {
 	clear: both;
 }
@@ -844,6 +852,16 @@ div#invest-home-button {
 	position: relative;
 	top: -180px;
 	overflow: hidden;
+}
+.school-selector > div:first-child > div:first-child {
+	margin-left: 34px;
+}
+.small-text {
+	font: 400 20px/21px "Noto sans", Arial, sans-serif;
+	font-style: italic;
+	color: #fff;
+	width: 100px;
+	margin-top: 20px;
 }
 
 
