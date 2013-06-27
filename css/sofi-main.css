@@ -856,19 +856,25 @@ div#invest-home-button {
 .school-selector > div:first-child > div:first-child {
 	margin-left: 34px;
 }
-.small-text {
+.school-selector .small-text {
 	font: 400 20px/21px "Noto sans", Arial, sans-serif;
 	font-style: italic;
 	color: #fff;
-	width: 100px;
+	text-shadow: 2px 2px 3px #000;
 	margin-top: 20px;
+	margin-right: 8px;
 }
-.big-text {
+.school-selector .big-text {
 	font: 700 44px/30px "Noto sans", Arial, sans-serif;
 	font-style: italic;
 	color: #fff;
+	text-shadow: 2px 2px 3px #000;
 	margin-top: 26px;
 	margin-right: 22px;
+}
+.school-selector .big-text span {
+font-weight: 400;
+font-size: 22px;
 }
 
 
