@@ -236,29 +236,7 @@ function sofi_school_select($render = true)
 					<div class="select">
 						<form>
 							<select name="select-school" id="combobox" class="select-school">
-								<option value="">Select one...</option>
-							    <option value="ActionScript">ActionScript</option>
-							    <option value="AppleScript">AppleScript</option>
-							    <option value="Asp">Asp</option>
-							    <option value="BASIC">BASIC</option>
-							    <option value="C">C</option>
-							    <option value="C++">C++</option>
-							    <option value="Clojure">Clojure</option>
-							    <option value="COBOL">COBOL</option>
-							    <option value="ColdFusion">ColdFusion</option>
-							    <option value="Erlang">Erlang</option>
-							    <option value="Fortran">Fortran</option>
-							    <option value="Groovy">Groovy</option>
-							    <option value="Haskell">Haskell</option>
-							    <option value="Java">Java</option>
-							    <option value="JavaScript">JavaScript</option>
-							    <option value="Lisp">Lisp</option>
-							    <option value="Perl">Perl</option>
-							    <option value="PHP">PHP</option>
-							    <option value="Python">Python</option>
-							    <option value="Ruby">Ruby</option>
-							    <option value="Scala">Scala</option>
-							    <option value="Scheme">Scheme</option>
+								<?php parse_schools_json(true); ?>
 							</select>
 						</form>
 					</div>
@@ -269,4 +247,19 @@ function sofi_school_select($render = true)
 				</div>
 		</div>
 	<?php }
+}
+
+function parse_schools_json( $asOptList = false ) 
+{
+	$json_file = file_get_contents('/wp-content/themes/sofiwp/json-includes/universityWebInfo2.json');
+	$json = json_decode($jason_array, true);
+	if ( $asOptList ) 
+	{
+		foreach ( $json as $j )
+		{
+			?>
+			<option value="<?php echo $j['slug']; ?>"><?php echo $j['schoolName']; ?></option>
+			<?php
+		}
+	}
 }
